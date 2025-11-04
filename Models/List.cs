@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace TrelloClone.Api.Models
 {
     public class List
@@ -8,6 +6,6 @@ namespace TrelloClone.Api.Models
         public string Name { get; set; }
         public int BoardId { get; set; }
         public Board Board { get; set; }
-        public ICollection<TaskItem> Tasks { get; set; } = new List<TaskItem>();
+        public ICollection<TaskItem> Tasks { get; set; } = [];
     }
 }
