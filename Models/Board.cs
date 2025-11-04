@@ -6,6 +6,6 @@ namespace TrelloClone.Api.Models
     {
         public int BoardId { get; set; }
         public string Name { get; set; }
-        public ICollection<List> Lists { get; set; } = new List<List>();
+        public ICollection<List> Lists { get; set; } = [];
     }
 }
