@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace TrelloClone.Api.Models
 {
     public class TaskItem
@@ -6,6 +8,7 @@ namespace TrelloClone.Api.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public int ListId { get; set; }
-        public List List { get; set; }
+        [JsonIgnore]
+        public List? List { get; set; }
     }
 }
